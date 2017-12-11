@@ -3,6 +3,10 @@
   "name": "GMail GitHub Pull Request Statuses",
   "version": "0.0.1",
   "description": "Shows GitHub pull request statuses on GMail",
+  "options_ui": {
+    "page": "static/options.html",
+    "chrome_style": true
+  },
   "permissions": [
     "storage"
   ]
