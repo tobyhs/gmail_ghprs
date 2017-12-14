@@ -34,7 +34,7 @@ class OptionsHandler {
    * Saves the options.
    */
   save() {
-    const token = this.document.getElementById('githubTokenInput').value
+    const token = this.document.getElementById('githubTokenInput').value;
     this.storage.setItem(GITHUB_TOKEN_KEY, token);
   }
 }
@@ -46,4 +46,4 @@ if (typeof document !== 'undefined') {
 module.exports = {
   GITHUB_TOKEN_KEY,
   OptionsHandler,
-}
+};
