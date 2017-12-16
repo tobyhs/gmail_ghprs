@@ -3,6 +3,7 @@
   "name": "GMail GitHub Pull Request Statuses",
   "version": "0.0.1",
   "description": "Shows GitHub pull request statuses on GMail",
+  "homepage_url": "https://github.com/tobyhs/gmail_ghprs",
   "options_ui": {
     "page": "static/options.html",
     "chrome_style": true
