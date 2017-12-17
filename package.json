@@ -5,6 +5,7 @@
     "test": "jasmine"
   },
   "dependencies": {
+    "gmail-js": "0.6.12",
     "webpack": "3.10.0"
   },
   "devDependencies": {
