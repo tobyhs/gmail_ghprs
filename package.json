@@ -5,6 +5,7 @@
     "test": "jasmine"
   },
   "dependencies": {
+    "graphql.js": "0.4.20",
     "gmail-js": "0.6.12",
     "webpack": "3.10.0"
   },
