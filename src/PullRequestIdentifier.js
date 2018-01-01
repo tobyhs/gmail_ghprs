@@ -23,6 +23,7 @@ class ParseError extends Error {
  * @param {string} identifier
  *   a pull request identifier in the form repoOwner/repoName#pullRequestNumber
  * @returns {PullRequestIdProperties}
+ * @throws {ParseError} if the pull request identifier string is invalid
  */
 function parse(identifier) {
   if (!/^[-a-z0-9]+\/[-a-z0-9]+#\d+$/i.test(identifier)) {
