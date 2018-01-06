@@ -9,8 +9,10 @@ describe('OptionsHandler', function () {
   let storage;
   let handler;
 
+  const optionsHtml = fs.readFileSync('extension/static/options.html');
+
   beforeEach(function () {
-    window = (new jsdom.JSDOM(fs.readFileSync('static/options.html'))).window;
+    window = (new jsdom.JSDOM(optionsHtml)).window;
     document = window.document;
 
     storage = jasmine.createSpyObj('storage', ['getItem', 'setItem']);
