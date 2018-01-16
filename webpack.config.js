@@ -3,6 +3,7 @@ const path = require('path');
 const config = {
   entry: {
     options: './src/options.js',
+    background: './src/background/main.js',
   },
 
   output: {
