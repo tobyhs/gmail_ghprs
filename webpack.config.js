@@ -1,3 +1,4 @@
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 
 const config = {
@@ -11,5 +12,11 @@ const config = {
     filename: '[name].js',
   },
 };
+
+if (process.env.RELEASE) {
+  config.plugins = [
+    new UglifyJsPlugin({ uglifyOptions: { ecma: 6, } }),
+  ];
+}
 
 module.exports = config;
