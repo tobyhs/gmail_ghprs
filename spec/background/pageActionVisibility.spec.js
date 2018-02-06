@@ -3,7 +3,11 @@ const chrome = require('sinon-chrome');
 const { setup } = require('../../src/background/pageActionVisibility');
 
 describe('pageActionVisibility', function () {
-  afterEach(function () {
+  beforeEach(function() {
+    chrome.flush();
+  });
+
+  afterAll(function() {
     chrome.flush();
   });
 
