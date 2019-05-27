@@ -6,7 +6,7 @@
     "test": "jasmine"
   },
   "dependencies": {
-    "gmail-js": "0.7.7",
+    "gmail-js": "0.9.6",
     "graphql.js": "0.5.2",
     "uglify-es": "3.3.9",
     "uglifyjs-webpack-plugin": "1.1.8",
