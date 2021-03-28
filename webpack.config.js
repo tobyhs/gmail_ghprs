@@ -2,7 +2,7 @@ const path = require('path');
 
 const config = {
   mode: process.env.NODE_ENV || 'development',
-  devtool: 'none',
+  devtool: false,
   entry: {
     options: './src/options.js',
     background: './src/background/main.js',
@@ -10,7 +10,6 @@ const config = {
 
   output: {
     path: path.resolve(__dirname, 'extension', 'build'),
-    filename: '[name].js',
   },
 };
 
